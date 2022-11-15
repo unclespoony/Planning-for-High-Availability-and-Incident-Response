@@ -2,8 +2,8 @@
   metrics_path: /metrics
   static_configs:
     - targets: 
-      - <public_ip>18.188.150.101:9100
-      - <public_ip>18.188.150.101:80
+      - <public_ip>13.58.72.91:9100
+      - <public_ip>13.58.72.91:80
 - job_name: blackbox
   metrics_path: /probe
   params:
