@@ -24,7 +24,7 @@ locals {
 #    }
 #  }
 
-   module "vpc_west" {
+   module "vpc" {
     source     = "./modules/vpc"
     cidr_block = "10.100.0.0/16"
 
