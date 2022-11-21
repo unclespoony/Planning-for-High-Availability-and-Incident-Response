@@ -9,7 +9,11 @@ Identify your zones here
 | Asset      | Purpose           | Size                                                                   | Qty                                                             | DR                                                                                                           |
 |------------|-------------------|------------------------------------------------------------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | Asset name | Brief description | AWS size eg. t3.micro (if applicable, not all assets will have a size) | Number of nodes/replicas or just how many of a particular asset | Identify if this asset is deployed to DR, replicated, created in multiple locations or just stored elsewhere |
-| Ubuntu-Web | EC2 | t3.micro | 3 instnaces | Deployed to two regions, us-east-2 and us-west-1 |
+| Ubuntu-Web | EC2 | t3.micro | 3 instances | Deployed to two regions, us-east-2 and us-west-1 |
+| udacity-project | VPC | NA | 1 | IPs in multiple AZs |
+| udacity-cluster | EKS Cluster | NA | 2 nodes | 2 node replica set |
+| udacity-lb-tf | ALB Load Balancer | NA |  |  |
+| udacity-db-cluster | Aurora MySQL DB Cluseter | 1 Instance |  |  |
 
 ### Descriptions
 More detailed descriptions of each asset identified above.
