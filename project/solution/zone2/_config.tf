@@ -8,7 +8,7 @@ terraform {
 
  provider "aws" {
    region = "us-east-2"
-   profile = "default"
+   #profile = "default"
    
    default_tags {
      tags = local.tags
@@ -18,8 +18,4 @@ terraform {
  provider "aws" {
   alias  = "usw1"
   region = "us-west-1"
-    
-  default_tags {
-     tags = local.tags
-   }
 }
