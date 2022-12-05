@@ -32,4 +32,4 @@ resource "kubernetes_namespace" "udacity" {
  # depends_on = [
 #    module.project_eks
 #  ]
-}
+#}
