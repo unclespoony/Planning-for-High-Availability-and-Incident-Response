@@ -1,8 +1,7 @@
 # Infrastructure
 
 ## AWS Zones
-us-east-2a, us-east-2b
-us-west-1a, us-west-1b
+us-east-2a, us-east-2b, us-west-1a, us-west-1b
 
 ## Servers and Clusters
 
