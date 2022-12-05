@@ -19,7 +19,14 @@
 | udacity-db-cluster | Aurora MySQL DB Cluseter | db.t2.small | 2 clusters, one in us-east-2 and one in us-west-1 | geo replication is configured between the cluster in zone1 and zone2, each cluster has 2 nodes in the appropriate AZs |
 
 ### Descriptions
-More detailed descriptions of each asset identified above.
+| Asset     | Description                                              |
+|-----------|----------------------------------------------------------|
+| Ubuntu-Web (EC2) | EC2s are AWS services that run and manage virtual machines in the AWS cloud.  These paticular EC2 instances are the main VMs that are running our application.|
+| udacity-project (VPC) | VPCs enables a logically isolated area of AWS cloud.  This VPC will be used to launch AWS resources, including our EC2s in this virtual network |
+| udacity-cluster (EKS) | EKS is the AWS managed Kubernetes control plane.  This cluster is used to run a Highly Available and scalable cluster of services |
+| udactiy-lb-tf (ALB)| Load balancers are used to automatically scale capacity based on traffic.  This load balence is used to balance the load between our EC2 intances |
+| udacity-db-cluster (rds) | RDS is an AWS managed database service. Our db cluster is based a postgres database platform and is being used to store our application data | 
+
 
 ## DR Plan
 ### Pre-Steps:
