@@ -13,7 +13,7 @@ Identify your zones here
 | udacity-project | VPC | NA | 1 | IPs in multiple AZs |
 | udacity-cluster | EKS Cluster | NA | 2 nodes | 2 node replica set |
 | udacity-lb-tf | ALB Load Balancer | NA | One in each zone  |  |
-| udacity-db-cluster | Aurora MySQL DB Cluseter |  | 2 clusters, one in us-east-2 and one in us-west-1 | geo replication is configured between the cluster in zone1 and zone2, each cluster has 2 nodes in the appropriate AZs |
+| udacity-db-cluster | Aurora MySQL DB Cluseter | db.t2.small | 2 clusters, one in us-east-2 and one in us-west-1 | geo replication is configured between the cluster in zone1 and zone2, each cluster has 2 nodes in the appropriate AZs |
 
 ### Descriptions
 More detailed descriptions of each asset identified above.
