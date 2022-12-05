@@ -12,7 +12,7 @@ Identify your zones here
 | Ubuntu-Web | EC2 | t3.micro | 3 instances | Deployed to two regions, us-east-2 and us-west-1 |
 | udacity-project | VPC | NA | 1 | IPs in multiple AZs |
 | udacity-cluster | EKS Cluster | NA | 2 nodes | 2 node replica set |
-| udacity-lb-tf | ALB Load Balancer | NA |  |  |
+| udacity-lb-tf | ALB Load Balancer | NA | One in each zone  |  |
 | udacity-db-cluster | Aurora MySQL DB Cluseter |  | 2 clusters, one in us-east-2 and one in us-west-1 | geo replication is configured between the cluster in zone1 and zone2, each cluster has 2 nodes in the appropriate AZs |
 
 ### Descriptions
