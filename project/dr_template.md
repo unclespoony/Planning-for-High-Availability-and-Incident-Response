@@ -17,6 +17,7 @@
 | udacity-cluster | EKS Cluster | NA | 2 nodes | 2 node replica set |
 | udacity-lb-tf | ALB Load Balancer | NA | One in each zone  |  |
 | udacity-db-cluster | Aurora MySQL DB Cluseter | db.t2.small | 2 clusters, one in us-east-2 and one in us-west-1 | geo replication is configured between the cluster in zone1 and zone2, each cluster has 2 nodes in the appropriate AZs |
+| ec2_sg | Security Group | NA | One for each zone | Ensure this security group is identical in each zone in case a failover is needed |
 
 ### Descriptions
 | Asset     | Description                                              |
@@ -26,6 +27,7 @@
 | udacity-cluster (EKS) | EKS is the AWS managed Kubernetes control plane.  This cluster is used to run a Highly Available and scalable cluster of services |
 | udactiy-lb-tf (ALB)| Load balancers are used to automatically scale capacity based on traffic.  This load balence is used to balance the load between our EC2 intances |
 | udacity-db-cluster (rds) | RDS is an AWS managed database service. Our db cluster is based a postgres database platform and is being used to store our application data | 
+| ec2_sg (Security Group) | AWS Security Groups control inbound and outbound traffic to AWS resources.  This security group will be used to conrol access to our VPC and EC2 instances to ensure only the proper access is occurring |
 
 
 ## DR Plan
